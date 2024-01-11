@@ -1,0 +1,351 @@
+/* Reset styles for all elements */
+* {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set opacity for paragraphs */
+p {
+  opacity: 0.7;
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: black;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 0.5rem 5vw;
+}
+
+.navbar i {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Hover effect for images */
+
+.con-1-right:hover {
+  cursor: pointer;
+  box-shadow: 5px 5px 5px #515151;
+}
+
+.con-2-left:hover {
+  cursor: pointer;
+  box-shadow: 5px 5px 5px #515151;
+}
+
+/* Hide hamburger menu by default */
+.hamburger {
+  display: none;
+  color: #ddf0ff;
+}
+
+/* Navbar list styles */
+.navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 1rem;
+  padding: 15px;
+  font-weight: bold;
+}
+
+.navbar > ul > li {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* Navbar list item hover effect */
+.navbar > ul > li:hover {
+  background-color: white;
+  color: #ff4cf5;
+  font-weight: 550;
+  border-radius: 8px;
+  transition: 1s ease-out;
+}
+
+/* Container styling */
+.container {
+  padding: 1rem 5vw;
+  display: grid;
+  height: 400px;
+}
+
+.container h1 {
+  margin: 1rem 0;
+}
+
+.arrow1,
+.arrow2 {
+  display: none;
+}
+
+/* container 1 styling */
+.container-1 {
+  grid-template-columns: 70% 30%;
+  background-color: #ddf0ff;
+  height: 100%;
+}
+
+.con-1-left {
+  margin: 2rem 0;
+}
+
+.con-1-right img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Button styling */
+.btn {
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin: 1rem 0;
+  font-size: 1rem;
+}
+
+/* Paragraph line-height */
+p {
+  line-height: 1.5;
+}
+
+/* Button colors */
+.btn-1 {
+  background-color: rgb(47, 150, 223);
+}
+
+.btn-1:hover .arrow1 {
+  display: inline;
+}
+
+.btn-2 {
+  background-color: #009f7b;
+}
+
+.btn-1:hover .arrow2 {
+  display: inline;
+}
+
+/* container 2 styling */
+.container-2 {
+  grid-template-columns: 30% 70%;
+  background-color: #009f7b;
+  height: 100%;
+}
+
+.con-2-right {
+  margin: 2rem 1rem;
+}
+
+.con-2-left img {
+  width: 100%;
+  height: 100%;
+}
+
+/* card section styling  */
+.card-container {
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.card-item {
+  flex: 0 1 calc(33.333% - 1rem);
+}
+
+.card {
+  width: 215px;
+  height: auto;
+  display: flex;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 2rem 1rem;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.card i {
+  padding: 1rem;
+  font-size: 1.5rem;
+  border-radius: 50%;
+}
+
+/* Icon styling for music, download, camera, wifi, and location */
+.card i.fa-music {
+  color: #ff56f1;
+  border: 1px solid #ff56f1;
+}
+
+.card:hover i.fa-music {
+  background-color: white;
+  color: #ff56f1;
+  border-color: white;
+  transform: rotate(360deg);
+}
+
+.music:hover {
+  color: white;
+  background-color: #ff56f1;
+}
+
+.card i.fa-download {
+  color: #009f7b;
+  border: 1px solid #009f7b;
+}
+
+.card:hover i.fa-download {
+  background-color: white;
+  color: #009f7b;
+  border-color: white;
+  transform: rotate(360deg);
+}
+
+.download:hover {
+  color: white;
+  background-color: #009f7b;
+}
+
+.card i.fa-camera {
+  color: #ffe864;
+  border: 1px solid #ffe864;
+}
+
+.card:hover i.fa-camera {
+  background-color: white;
+  color: #ffe864;
+  border-color: white;
+}
+
+.camera:hover {
+  color: white;
+  background-color: #ffe864;
+}
+
+.card i.fa-wifi {
+  color: #4070fe;
+  border: 1px solid #4070fe;
+}
+
+.card:hover i.fa-wifi {
+  background-color: white;
+  color: #4070fe;
+  border-color: white;
+}
+
+.wifi:hover {
+  color: white;
+  background-color: #4070fe;
+}
+
+.card i.fa-location {
+  color: #626967;
+  border: 1px solid #626967;
+}
+
+.card:hover i.fa-location {
+  background-color: white;
+  color: #626967;
+  transition: all 0.7s;
+}
+
+.location:hover {
+  color: white;
+  background-color: #626967;
+}
+
+/* footer styling  */
+
+footer {
+  background-color: #515151;
+  padding: 2rem 1rem;
+  height: auto;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+footer li {
+  list-style: none;
+  cursor: pointer;
+  padding: 3px 0;
+  opacity: 0.5;
+  color: rgb(255, 255, 255);
+}
+
+footer li:hover {
+  color: white;
+  opacity: 1;
+}
+
+footer li:first-child {
+  opacity: 1;
+  font-size: 1.2rem;
+}
+
+/* Responsive Design */
+
+/* Add styles for tablet landscape here */
+@media only screen and (max-width: 1024px) {
+  .card {
+    width: 330px;
+  }
+}
+
+/* Add styles for mobile devices here */
+@media only screen and (max-width: 480px) {
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+
+  .container-1 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .container-2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
